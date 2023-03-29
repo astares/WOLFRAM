@@ -1,2 +1,2 @@
 # WOLFRAM
-World Language Framework / World Lingua France
+World Language Framework / World Lingua Franca
