@@ -11,6 +11,14 @@ WLFCharacterTest >> testAsToken [
 ]
 
 { #category : #tests }
+WLFCharacterTest >> testIntervalOfLengtOne [
+
+	self deny: ($a to: $a) asSequence isSequence.
+	
+	self assert: ($a to: $a) asSequence isToken 
+]
+
+{ #category : #tests }
 WLFCharacterTest >> testIsCharacterToken [
 
 	self assert: $a asToken isCharacterToken.
