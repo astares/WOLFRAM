@@ -35,3 +35,15 @@ WLFToken >> contents: anObject [
 
 	contents := anObject
 ]
+
+{ #category : #testing }
+WLFToken >> isCharacterToken [
+
+	^ false
+]
+
+{ #category : #testing }
+WLFToken >> isStringToken [
+
+	^ false
+]

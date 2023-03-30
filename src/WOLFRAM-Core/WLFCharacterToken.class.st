@@ -14,3 +14,9 @@ Class {
 	#superclass : #WLFToken,
 	#category : #'WOLFRAM-Core-Base'
 }
+
+{ #category : #testing }
+WLFCharacterToken >> isCharacterToken [
+
+	^ true
+]

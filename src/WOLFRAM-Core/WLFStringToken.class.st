@@ -8,3 +8,18 @@ Class {
 	#superclass : #WLFToken,
 	#category : #'WOLFRAM-Core-Base'
 }
+
+{ #category : #accessing }
+WLFStringToken >> contents: aString [
+
+	aString size < 2 ifTrue: [
+		self error: 'String token must at least have two characters' ].
+	
+	contents := aString
+]
+
+{ #category : #testing }
+WLFStringToken >> isStringToken [
+
+	^ true
+]

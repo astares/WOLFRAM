@@ -16,5 +16,5 @@ WLFStringTokenTest >> testInstanceCreation [
 { #category : #tests }
 WLFStringTokenTest >> testInstanceCreationOnEmptyThrowsError [
 
-	self should: (WLFStringToken on: '') raise: Error
+	self should: [ WLFStringToken on: '' ] raise: Error
 ]

@@ -5,6 +5,20 @@ Class {
 }
 
 { #category : #tests }
+WLFCharacterTest >> testAsToken [
+
+	self assert: '<' asToken contents equals: '<'
+]
+
+{ #category : #tests }
+WLFCharacterTest >> testIsCharacterToken [
+
+	self assert: $a asToken isCharacterToken.
+	
+	self assert: '+' asToken isCharacterToken.
+]
+
+{ #category : #tests }
 WLFCharacterTest >> testIsTerminal [
 
 	self 

@@ -11,6 +11,12 @@ WLFStringTest >> testAsToken [
 ]
 
 { #category : #tests }
+WLFStringTest >> testIsStringToken [
+
+	self assert: 'nil' asToken isStringToken
+]
+
+{ #category : #tests }
 WLFStringTest >> testIsTerminal [
 
 	self 
