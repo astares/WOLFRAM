@@ -9,6 +9,12 @@ Object >> asExpression [
 ]
 
 { #category : #'*WOLFRAM-Core' }
+Object >> asToken [
+
+	^ self notYetImplemented
+]
+
+{ #category : #'*WOLFRAM-Core' }
 Object >> isProductionRule [
 
 	^ false
