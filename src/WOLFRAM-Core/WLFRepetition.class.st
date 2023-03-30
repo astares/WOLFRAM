@@ -1,7 +1,10 @@
+"
+A repetition
+"
 Class {
 	#name : #WLFRepetition,
-	#superclass : #Object,
-	#category : #'WOLFRAM-Core'
+	#superclass : #WLFObject,
+	#category : #'WOLFRAM-Core-Base'
 }
 
 { #category : #testing }

@@ -24,3 +24,9 @@ WLFStringTokenTest >> testIsToken [
 
 	self assert: 'nil' asToken isToken
 ]
+
+{ #category : #tests }
+WLFStringTokenTest >> testSimpleMatching [
+
+	self assert: ('foo' matches: 'foo' asToken)
+]

@@ -30,6 +30,15 @@ WLFCharacterTokenTest >> testLinefeed [
 ]
 
 { #category : #tests }
+WLFCharacterTokenTest >> testSimpleMatching [
+
+	self assert: ('>' matches: $> asToken).
+	
+	self assert: ('>' matches: '>' asToken)
+	
+]
+
+{ #category : #tests }
 WLFCharacterTokenTest >> testSpace [
 
 	self assert: Character space asToken isCharacterToken.

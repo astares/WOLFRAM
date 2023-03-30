@@ -3,7 +3,7 @@ Abstract superclass to represent predefined terminal tokens.
 "
 Class {
 	#name : #WLFToken,
-	#superclass : #Object,
+	#superclass : #WLFObject,
 	#instVars : [
 		'contents'
 	],
@@ -36,6 +36,12 @@ WLFToken >> contents: anObject [
 	contents := anObject
 ]
 
+{ #category : #sequencing }
+WLFToken >> followedBy: anObject [
+	
+	^ WLFSequence of: self followedBy: anObject
+]
+
 { #category : #testing }
 WLFToken >> isCharacterToken [
 
@@ -52,4 +58,10 @@ WLFToken >> isStringToken [
 WLFToken >> isToken [
 
 	^ true
+]
+
+{ #category : #testing }
+WLFToken >> matches: aString [
+
+	^ aString = self contents asString
 ]
