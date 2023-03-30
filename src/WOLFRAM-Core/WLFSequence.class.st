@@ -19,6 +19,13 @@ WLFSequence class >> of: anObject followedBy: anotherObject [
 		yourself
 ]
 
+{ #category : #adding }
+WLFSequence >> add: anObject [
+
+	elements add: anObject.
+	^ anObject 
+]
+
 { #category : #initialization }
 WLFSequence >> initialize [
 
