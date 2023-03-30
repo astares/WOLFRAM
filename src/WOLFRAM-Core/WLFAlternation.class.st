@@ -1,8 +1,8 @@
 "
-A sequence
+An alternation is a sequence of elements
 "
 Class {
-	#name : #WLFSequence,
+	#name : #WLFAlternation,
 	#superclass : #WLFObject,
 	#instVars : [
 		'elements'
@@ -11,8 +11,8 @@ Class {
 }
 
 { #category : #'instance creation' }
-WLFSequence class >> of: anObject followedBy: anotherObject [
-
+WLFAlternation class >> with: anObject with: anotherObject [ 
+	
 	^ self new
 		add: anObject;
 		add: anotherObject;
@@ -20,35 +20,35 @@ WLFSequence class >> of: anObject followedBy: anotherObject [
 ]
 
 { #category : #'instance creation' }
-WLFSequence class >> withAll: aCollection [ 
-
-	^ self new
-		initializeElements: aCollection;
+WLFAlternation class >> withAll: aCollection [
+ 
+	^ self basicNew 
+		initializeWithAll: aCollection;
 		yourself
 ]
 
 { #category : #adding }
-WLFSequence >> add: anObject [
+WLFAlternation >> add: anObject [
 
 	elements add: anObject.
 	^ anObject 
 ]
 
 { #category : #initialization }
-WLFSequence >> initialize [
+WLFAlternation >> initialize [
 
 	super initialize.
 	elements := OrderedCollection new
 ]
 
 { #category : #initialization }
-WLFSequence >> initializeElements: aCollection [
+WLFAlternation >> initializeWithAll: aCollection [
  
 	elements := aCollection 
 ]
 
 { #category : #testing }
-WLFSequence >> isSequence [
+WLFAlternation >> isAlternation [
 
 	^ true
 ]

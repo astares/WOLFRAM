@@ -6,9 +6,3 @@ Class {
 	#superclass : #WLFObject,
 	#category : #'WOLFRAM-Core-Base'
 }
-
-{ #category : #testing }
-WLFRepetition class >> isAbstract [
-
-	^ self == WLFRepetition
-]

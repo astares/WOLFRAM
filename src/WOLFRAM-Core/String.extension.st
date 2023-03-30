@@ -12,3 +12,9 @@ String >> isTerminal [
 
 	^ true
 ]
+
+{ #category : #'*WOLFRAM-Core' }
+String >> or: anotherObject [
+
+	^ self asExpression | anotherObject asExpression
+]

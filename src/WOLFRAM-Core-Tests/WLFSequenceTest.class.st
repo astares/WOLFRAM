@@ -18,6 +18,12 @@ WLFSequenceTest >> setUp [
 ]
 
 { #category : #tests }
+WLFSequenceTest >> testInstanceCreationOneObjectFollowedByAnother [
+
+	self assert: ('a' asToken followedBy: 'b' asToken) isSequence 
+]
+
+{ #category : #tests }
 WLFSequenceTest >> testIsSequence [
 
 	self assert: sequence isSequence 
