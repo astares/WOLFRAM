@@ -47,3 +47,9 @@ WLFToken >> isStringToken [
 
 	^ false
 ]
+
+{ #category : #testing }
+WLFToken >> isToken [
+
+	^ true
+]

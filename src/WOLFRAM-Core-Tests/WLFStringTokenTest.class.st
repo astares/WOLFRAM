@@ -18,3 +18,9 @@ WLFStringTokenTest >> testInstanceCreationOnEmptyThrowsError [
 
 	self should: [ WLFStringToken on: '' ] raise: Error
 ]
+
+{ #category : #tests }
+WLFStringTokenTest >> testIsToken [
+
+	self assert: 'nil' asToken isToken
+]
