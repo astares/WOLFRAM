@@ -13,7 +13,9 @@ WLFCharacterTest >> testAsToken [
 { #category : #tests }
 WLFCharacterTest >> testCarriageReturn [
 
-	self assert: Character cr asToken isCharacterToken
+	self assert: Character cr asToken isCharacterToken.
+	
+	self assert: Character cr asToken contents equals: Character cr
 ]
 
 { #category : #tests }
@@ -36,11 +38,23 @@ WLFCharacterTest >> testIsTerminal [
 { #category : #tests }
 WLFCharacterTest >> testLinefeed [
 
-	self assert: Character linefeed asToken isCharacterToken
+	self assert: Character linefeed asToken isCharacterToken.
+	
+	self assert: Character linefeed asToken contents equals: Character linefeed
 ]
 
 { #category : #tests }
 WLFCharacterTest >> testSpace [
 
-	self assert: Character space asToken isCharacterToken
+	self assert: Character space asToken isCharacterToken.
+	
+	self assert: Character space asToken contents equals: Character space
+]
+
+{ #category : #tests }
+WLFCharacterTest >> testTab [
+
+	self assert: Character tab asToken isCharacterToken.
+	
+	self assert: Character tab asToken contents equals: Character tab
 ]
